@@ -1,0 +1,25 @@
+{
+  "name": "coding-lunch-svgs",
+  "version": "1.0.0",
+  "description": "A basic introduction to SVGs and some useful techniques",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwetmore-hoodoo/coding-lunch-svgs.git"
+  },
+  "author": "Jack Wetmore",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/jwetmore-hoodoo/coding-lunch-svgs/issues"
+  },
+  "homepage": "https://github.com/jwetmore-hoodoo/coding-lunch-svgs#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4"
+  }
+}
