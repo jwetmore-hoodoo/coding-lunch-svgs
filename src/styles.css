@@ -9,3 +9,87 @@ svg {
 	height: 10rem;
 	width: 10rem;
 }
+
+/* directly - change individual children */
+
+.svg-vnu-direct {
+	color: white;
+}
+
+.svg-vnu-direct .outline {
+	color: lime;
+}
+
+.svg-vnu-direct .v {
+	color: orange;
+}
+
+.svg-vnu-direct .nu {
+	color: purple;
+}
+
+/* referenced - change one whole color */
+
+.svg-circle {
+	color: fuchsia;
+}
+
+.svg-square {
+	color: greenyellow;
+}
+
+.svg-line {
+	color: aliceblue;
+}
+
+.svg-vnu {
+	transition: color .25s ease-in-out;
+}
+
+.svg-vnu.--one {
+	color: red;
+}
+
+.svg-vnu.--two {
+	color: green;
+}
+
+.svg-vnu:hover {
+	color: blue;
+}
+
+/* mask */
+
+button {
+	/* 	--primary: royalblue; */
+	/* 	--secondary: goldenrod; */
+	--primary: black;
+	--secondary: darkred;
+
+	background-color: var(--primary);
+	border: .25rem solid var(--secondary);
+	color: var(--secondary);
+	display: flex;
+	font-size: 2rem;
+	gap: 1rem;
+	padding: .5rem;
+	transition-property: background-color, border-color, color;
+	transition-duration: .25s;
+	transition-timing-function: ease-in-out;
+}
+
+button:hover {
+	background-color: var(--secondary);
+	border-color: var(--primary);
+	color: var(--primary);
+}
+
+button::before {
+	align-items: center;
+	background-color: currentcolor;
+	content: '';
+	display: block;
+	height: 2rem;
+	mask-image: url('svg/line.svg');
+	width: 2rem;
+}
